@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+html {
+    background-color: lightgray;
+}
+
+header {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+hr {
+    position: relative;
+    top: 20;
+    height: 12px;
+    background-color: black;
+    margin: 0 12%;
+}
+
+h1 {
+    margin: 20px 20%;
+    background: linear-gradient(90deg, blue, white, red)
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    text-decoration: underline;
+    margin-bottom: 16px;
+}
+
+p {
+    font-size: 24px;
+}
+
+#image {
+    width: 50%;
+    height: auto;
+}
+
+#img-caption {
+    font-size: 18px;
+}
+
+#intro {
+
+    margin: 0 17%;
+}
+
+#trib-foot {
+    text-align: center;
+}
+
+
+/* Tribute Info Section */
+#intro {
+    margin-bottom: 15px;
+}
+
+.year {
+    font-weight: 800;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+#tribute-info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-bottom: 35px;
+}
+
+#timeline {
+    margin-left: 5%;
+    margin-right: 0;
+    font-size: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+#right-photo {
+    max-width: 350px;
+    height: auto;
+    margin-top: 25%;
+}
+
+#left-photo {
+    max-width: 300px;
+    height: auto;
+    margin-top: 85%;
+    margin-left: 5%;
+}

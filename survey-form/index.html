@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+
+    <header>
+      <h1>Customer Satisfaction Survey</h1>
+      <p id ="description">The goal of this survey is to determine how well we are meeting our customers needs. We will ask a series of questions and determine where we could improve our process.</p>
+    </header>
+
+    <form id ="survey-form">
+
+      <!--The First Question Block-->
+      <fieldset class = "questions">
+        <h2><em>Personal Information</em></h2>
+        <label id="name-label">What is your name?<input id="name" type="text" required placeholder="Enter Name" /></label>
+        <label id="email-label">What is your email?<input id="email" type="email" required placeholder="Enter Email" /></label>
+        <label id="gender-selection">What gender do you identify as?
+          <span><input type="radio" name="gender" value="male" />Male</span>
+          <span><input type="radio" name="gender" value="female"/> Female </span>
+          <span><input type="radio" name="gender" value="prefer not to say"/> Prefer Not to Say </span>
+      </label>
+      </fieldset>
+
+      <!--Second Question Block-->
+      <fieldset class = "questions" >
+        <h2><em>Last Visit Review</em></h2> 
+        <label id="happiness">How happy are you with your last visit? (1 being Not Satisfied and 10 being Completely Satisfied)<input id="happy-rating" type="number" min="1" max="10" placeholder="Happiness Rating"/></label>
+        <label id="last-visit">When was the last time you used our service?
+          <select id="dropdown" value="">
+            <option value="1">Within the last month.</option>
+            <option value="2">Within the last six months.</option> 
+            <option value="3">Over a year ago.</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <!--Third Question Block-->
+      <fieldset class = "questions">
+          <h2><em>Recommend or Not</em></h2>
+          <label id="recommendation">Would you recommend any of our services to anyone else?
+            <label class="rec-ans"><input type="checkbox" class="cbutton" value="yes"/>Definitely Yes</label>
+            <label class="rec-ans"><input type="checkbox" class="cbutton" value="yes"/>Yes</label>
+            <label class="rec-ans"><input type="checkbox" class="cbutton" value="yes"/>No</label>
+          </label>
+          <label id="rec-reasons">If you would recommend us, please mention reasons why:
+            <textarea name="reasons" row="5" cols="30" placeholder="I would recommend this service because..."></textarea>
+          </label>
+      </fieldset>
+
+      <input id="submit" type="submit" value="submit"/>
+    </form>
+    </body>
+</html>
