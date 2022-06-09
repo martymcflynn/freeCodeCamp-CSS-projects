@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 28px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+hr {
+    margin: 2.5em;
+    size: 4px;
+    color: black;
+}
+
+body {
+    background-color: lightgrey
+}
+
+/*Intro Section*/
+#header {
+    margin-bottom: 2em;
+    border: solid 1px black;
+    background: linear-gradient(
+        45deg,
+        pink,
+        white,
+        #DDA0DD    
+    )
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.25em;
+    background-color: white
+}
+
+#nav-links {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25em;
+}
+
+#header p{
+  font-size: 1.25em;
+  text-align: center;
+  font-weight: 800;
+}
+
+/*Sections*/
+section {
+    margin-bottom: 30px;
+}
+
+#Product_Info {
+    margin-left: 1em;
+}
+
+#amazon-link, #shopify-link {
+    display: flex;
+    align-items: center;
+}
+
+.fa-amazon, .fa-shopify{
+    margin-right: 1.5em;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/*Variety Section*/
+.price {
+    font-style: italic;
+    font-weight: 800;
+    margin-right: 1em;
+}
+
+#option1, #option2 , #option3{
+    display: flex;
+    justify-content: space-between; 
+    margin: 1em 1em;
+}
+
+#legal-notice {
+    font-size: .75em;
+    text-align: center;
+    margin-top: -1em;
+}
+
+
+/*Testimonials*/
+#testimonies {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    font-size: .9em;
+    font-style: italic;
+
+}
+
+/*Emailer Sign Up*/
+#notifications {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#form {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Photos and Video*/
+#header-img {
+    display: block;
+    width: 16em;
+    height: 20em;
+    margin:2em auto;
+    margin-bottom: 0;
+    border-radius: 50% 50% 50% 50%;
+}
+
+#video {
+    margin: 3em 10%; 
+}
+
+@media (min-width: 550px) {
+    #header-img {
+        /* display: block; */
+        width: 25%;
+        height: auto;
+        max-height: 70vh;
+        /* margin:2em auto;
+        margin-bottom: 0;
+        border-radius: 50% 50% 50% 50%; */
+    }
+
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    #header {
+        margin-bottom: 2em;
+        border: solid 1px black;
+        background: linear-gradient(
+            45deg,
+            pink,
+            white,
+            #DDA0DD    
+        )
+    }
+
+    #nav-links {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.25em;
+        gap: 1.5vw;
+  
+    }
+
+    #nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1.25em;
+        padding: 1.5vw;
+    }
+
+    section {
+        margin-bottom: 8rem;
+    }
+    
+    /* #Product_Info {
+        margin-left: 1em;
+    } */
+    
+    #intro-text {
+        margin-left: 5vw;
+        margin-top: 7vh;
+        font-size: 2em;
+    }
+
+    #amazon-link, #shopify-link {
+        display: flex;
+        align-items: center;
+        margin-bottom: 7vh;
+        margin-top: 7vh;
+        margin-left: 15vw;
+        font-size: 1.75em;
+    }
+    
+    .fa-amazon, .fa-shopify{
+        margin-right: 1.5em;
+
+    }
+
+    /*Different Options*/
+    #option1, #option2 , #option3{
+        display: flex;
+        justify-content: space-between; 
+        margin: 6vh 10vw;
+        font-size: 1.5em;
+    }
+    
+    #legal-notice {
+        font-size: .75em;
+        text-align: center;
+        margin-top: -1em;
+    }
+
+    #legal-notice {
+        font-size: .9em;
+        text-align: center;
+        margin-top: -1.5vh;
+    }
+
+    /*Testimonials*/
+    #testimonies {
+        gap: 5vh;
+        margin-top: 5vh;
+        margin-right: 10vw;
+        margin-left: 10vw;
+        font-size: 1em;    
+    }
+    #video {
+        margin: 2vh 21.5vw; 
+        width: 50vw;
+        height: 60vh;
+    }
+    
+    #notifications {
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    
+    #form {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #submit {
+        padding: .5vh 4vw;
+    }
+
+    #email {
+        width: 15vw;
+    }
+  }
